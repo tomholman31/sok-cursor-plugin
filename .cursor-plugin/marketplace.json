@@ -1,0 +1,11 @@
+{
+  "name": "sok",
+  "owner": { "name": "SOK" },
+  "plugins": [
+    {
+      "name": "sok",
+      "source": "./",
+      "description": "Solana agent-to-agent settlement: create invoices and pay with $SOK via agentPay.send"
+    }
+  ]
+}
