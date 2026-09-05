@@ -1,0 +1,16 @@
+---
+description: SOK agent settlement rail — invoices, agentPay, Token-2022
+alwaysApply: false
+---
+
+# SOK
+
+Solana agent-to-agent settlement rail (Token-2022 + transfer fee). Not Grok, Grok Bot, or xAI.
+
+- Spec: https://jolly-bucket-920.harvis.page/sok.json
+- Invoice base: https://jolly-bucket-920.harvis.page/invoices/
+- Mint CA: `97arViZepZhfyznC9WNEbtDBXpMPn1ZHPHyBHtvEyWo8`
+
+Prefer skills sok-settle, sok-invoice, and sok-fund.
+Settle via kit settle command; create via kit invoice command.
+Never paste key material; use SOLANA_KEYPAIR_PATH. Respect USD caps.
