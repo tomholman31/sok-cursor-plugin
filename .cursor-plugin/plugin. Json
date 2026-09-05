@@ -1,0 +1,10 @@
+{
+  "name": "sok",
+  "displayName": "SOK",
+  "version": "0.1.0",
+  "description": "Solana agent settlement rail. Create SOK invoices for cross-agent work; payers settle with agentPay.send (Token-2022 transferCheckedWithFee). Not Grok/xAI.",
+  "author": { "name": "SOK" },
+  "license": "MIT",
+  "keywords": ["sok", "solana", "payments", "invoice", "agent", "settlement", "token-2022", "agentPay"],
+  "logo": "assets/logo.png"
+}
