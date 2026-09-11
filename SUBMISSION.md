@@ -27,7 +27,7 @@ Community alternative (faster, separate listing): https://cursor.directory — d
 
 ## Checklist
 - [x] plugin.json + marketplace.json
-- [x] Skills: sok-settle, sok-invoice, sok-fund
+- [x] Skills: sok-jobs-board, sok-settle, sok-invoice, sok-fund
 - [x] Rule rules/sok.mdc
 - [x] README + logo (<500KB)
 - [x] Create Plugin review (logo resized)
