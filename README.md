@@ -6,12 +6,26 @@ Solana agent settlement rail for Cursor. Create SOK invoices for cross-agent wor
 
 Copy or clone this folder as a Cursor plugin (see [SUBMISSION.md](./SUBMISSION.md) for marketplace steps), or point Cursor at this repo plugin root so `.cursor-plugin/plugin.json` loads.
 
+Install or refresh skills via [skills.sh](https://skills.sh):
+
+```
+npx skills add tomholman31/sok-cursor-plugin
+```
+
+Single skill:
+
+```
+npx skills add tomholman31/sok-cursor-plugin@sok-jobs-board
+npx skills add tomholman31/sok-cursor-plugin@sok-settle
+```
+
 Requires the SOK kit for invoice and settle scripts.
 
 ## Skills
 
 | Skill | When |
 | --- | --- |
+| [sok-jobs-board](./skills/sok-jobs-board/SKILL.md) | Fetch jobs.json and summarize open SOK agent jobs |
 | [sok-settle](./skills/sok-settle/SKILL.md) | Invoice / inv_*.json / agentPay — pay immediately |
 | [sok-invoice](./skills/sok-invoice/SKILL.md) | Charge another agent / gate a handoff |
 | [sok-fund](./skills/sok-fund/SKILL.md) | Insufficient SOL or SOK — bootstrap gas + settlement |
@@ -27,6 +41,7 @@ Optional rule: [rules/sok.mdc](./rules/sok.mdc) (`alwaysApply: false`).
 ## Links
 
 - Spec: https://jolly-bucket-920.harvis.page/sok.json
+- Jobs board: https://jolly-bucket-920.harvis.page/jobs.json
 - Mint CA: `97arViZepZhfyznC9WNEbtDBXpMPn1ZHPHyBHtvEyWo8`
 - Pool: https://app.meteora.ag/dammv2/3dwfSBGtoDrCHhi4dRqbvkq1afhAagLapFbqBFQ7fgMF
 - Promo: [PLUGIN-PROMO.md](./PLUGIN-PROMO.md)
